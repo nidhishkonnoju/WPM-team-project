@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Settings</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Settings</h1>
+    <nav>
+      <a href="index.html">Dashboard</a>
+      <a href="campaigns.html">Campaigns</a>
+      <a href="workflows.html">Workflows</a>
+      <a href="analytics.html">Analytics</a>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <form id="settingsForm">
+      <label for="userName">Display Name</label>
+      <input type="text" id="userName" placeholder="Your name" required />
+
+      <label for="emailFrequency">Email Updates</label>
+      <select id="emailFrequency">
+        <option value="daily">Daily</option>
+        <option value="weekly" selected>Weekly</option>
+        <option value="monthly">Monthly</option>
+        <option value="never">Never</option>
+      </select>
+
+      <div class="checkbox-group">
+        <label>
+          <input type="checkbox" id="darkModeToggle" />
+          Enable Dark Mode (Theme applies on next visit)
+        </label>
+      </div>
+
+      <button type="submit">💾 Save Settings</button>
+
+      <div id="saveMessage" class="message" style="display: none;">✔ Settings saved!</div>
+    </form>
+  </main>
+
+  <script src="settings-script.js"></script>
+</body>
+</html>

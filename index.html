@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Marketing Dashboard</title>
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Marketing Dashboard</h1>
+    <nav>
+      <a href="campaign_builder.html">Campaigns</a>
+      <a href="workflow.html">Workflows</a>
+      <a href="analytics.html">Analytics</a>
+      <a href="settings.html">Settings</a>
+    </nav>
+  </header>
+
+  <div class="cards">
+    <div class="card">
+      <strong>Campaigns Created</strong><br>
+      <span id="campaignCount">—</span>
+    </div>
+    <div class="card">
+      <strong>Workflows Defined</strong><br>
+      <span id="workflowCount">—</span>
+    </div>
+    <div class="card">
+      <strong>Messages Sent</strong><br>
+      <span id="messagesSent">—</span>
+    </div>
+  </div>
+
+  <div class="buttons">
+    <button onclick="location.href='campaign-builder.html'">New Campaign</button>
+    <button onclick="location.href='campaigns.html'">View Campaigns</button>
+    <button onclick="location.href='workflows.html'">Create Workflow</button>
+  </div>
+
+  <!-- Link to external JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>

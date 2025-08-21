@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Campaign Builder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Campaign Builder</h1>
+    <nav>
+      <a href="index.html">Dashboard</a>
+      <a href="analytics.html">Analytics</a>
+      <a href="workflow.html">Workflows</a>
+      <a href="settings.html">Settings</a>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <form id="campaignForm">
+      <label for="campaignName">Campaign Name</label>
+      <input type="text" id="campaignName" placeholder="e.g., Summer Sale 2025" required />
+
+      <label for="campaignType">Campaign Type</label>
+      <select id="campaignType" required>
+        <option value="">-- Choose Type --</option>
+        <option value="Email">Email</option>
+        <option value="SMS">SMS</option>
+        <option value="Push">Push Notification</option>
+      </select>
+
+      <label for="launchDate">Launch Date</label>
+      <input type="date" id="launchDate" required />
+
+      <button type="submit">🚀 Create Campaign</button>
+
+      <div id="confirmation" class="message" style="display: none;"></div>
+    </form>
+  </main>
+
+  <script src="builder-script.js"></script>
+</body>
+</html>

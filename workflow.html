@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Workflow Builder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Workflow Builder</h1>
+    <nav>
+      <a href="index.html">Dashboard</a>
+      <a href="campaigns.html">Campaigns</a>
+      <a href="analytics.html">Analytics</a>
+      <a href="settings.html">Settings</a>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <form id="workflowForm">
+      <label for="workflowName">Workflow Name</label>
+      <input type="text" id="workflowName" placeholder="e.g., New User Welcome Flow" required />
+
+      <label for="workflowSteps">Steps (describe briefly)</label>
+      <textarea id="workflowSteps" rows="4" placeholder="e.g., Step 1: Send welcome email, Step 2: Wait 2 days..." required></textarea>
+
+      <button type="submit">📦 Save Workflow</button>
+
+      <div id="workflowMessage" class="message" style="display: none;"></div>
+    </form>
+  </main>
+
+  <script src="workflow-script.js"></script>
+</body>
+</html>
